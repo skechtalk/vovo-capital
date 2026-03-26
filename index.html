@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Vovo Capital | Business Growth & AI Transformation Advisory South Africa</title>
+  <meta name="description" content="Vovo Capital is South Africa's premier business growth and AI transformation advisory. We deploy strategy, AI systems, and revenue architecture for mid-market and enterprise clients in Johannesburg." />
+  <meta name="keywords" content="business growth consulting South Africa, AI transformation advisory Johannesburg, B-BBEE strategy consulting, revenue growth consulting, digital transformation South Africa, management consulting Johannesburg" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Vovo Capital" />
+  <link rel="canonical" href="https://vovocapital.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vovocapital.com/" />
+  <meta property="og:title" content="Vovo Capital | Business Growth & AI Transformation Advisory" />
+  <meta property="og:description" content="South Africa's premier business growth and AI transformation advisory. Revenue consulting, B-BBEE strategy, digital transformation mandates." />
+  <meta property="og:image" content="https://vovocapital.com/images/og-image.jpg" />
+  <meta property="og:locale" content="en_ZA" />
+  <meta property="og:site_name" content="Vovo Capital" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vovo Capital | Business Growth & AI Transformation Advisory" />
+  <meta name="twitter:description" content="South Africa's premier business growth and AI transformation advisory. Revenue consulting, B-BBEE strategy, digital transformation." />
+  <meta name="twitter:image" content="https://vovocapital.com/images/og-image.jpg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Vovo Capital",
+    "description": "Business growth advisory offering revenue growth consulting, AI transformation, B-BBEE strategy, and digital transformation mandates for South African enterprises.",
+    "url": "https://vovocapital.com",
+    "telephone": "+27788949331",
+    "email": "info@vovocapital.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sandton",
+      "addressRegion": "Gauteng",
+      "addressCountry": "ZA"
+    },
+    "areaServed": "ZA",
+    "serviceType": ["Business Growth Consulting", "AI Transformation", "B-BBEE Advisory", "Digital Transformation", "Revenue Strategy"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --ivory:      #F7F4EE;
+      --cream:      #FAF8F4;
+      --navy:       #0C1628;
+      --navy-mid:   #1A2942;
+      --gold:       #B8960C;
+      --gold-lt:    #D4AF37;
+      --gold-pale:  #F0E8C8;
+      --warm:       #6B6560;
+      --warm-lt:    #9A948F;
+      --rule:       #D8D3C8;
+      --rule-dk:    #C2BBB0;
+      --white:      #FFFFFF;
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'Jost', 'Helvetica Neue', sans-serif;
+      --max:        1440px;
+      --gut:        80px;
+    }
+
+    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--ivory);
+      color: var(--navy);
+      font-family: var(--sans);
+      font-weight: 300;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Grain overlay */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9000; opacity: 0.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    section { position: relative; }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--gut);
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .wa-float {
+      position: fixed; bottom: 32px; right: 32px;
+      width: 56px; height: 56px;
+      background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 8000;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+    .wa-float svg { width: 30px; height: 30px; fill: #fff; }
+
+    /* ── COOKIE BANNER ── */
+    .cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 7000;
+      background: rgba(12, 22, 40, 0.97);
+      border-top: 1px solid rgba(184,150,12,0.3);
+      backdrop-filter: blur(20px);
+      padding: 22px var(--gut);
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 36px;
+      transition: transform 0.4s ease;
+    }
+    .cookie-banner.hidden { transform: translateY(110%); }
+    .cookie-text {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.8rem; color: rgba(247,244,238,0.65);
+      line-height: 1.65; max-width: 680px;
+    }
+    .cookie-text a { color: var(--gold-lt); text-decoration: underline; text-underline-offset: 3px; }
+    .cookie-actions { display: flex; gap: 12px; flex-shrink: 0; }
+    .ck-btn {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.72rem; letter-spacing: 0.14em;
+      text-transform: uppercase; border: none;
+      padding: 11px 26px; cursor: pointer; transition: all 0.2s;
+    }
+    .ck-accept { background: var(--gold); color: var(--navy); }
+    .ck-accept:hover { background: var(--gold-lt); }
+    .ck-reject {
+      background: transparent; color: rgba(247,244,238,0.5);
+      border: 1px solid rgba(247,244,238,0.18);
+    }
+    .ck-reject:hover { border-color: rgba(247,244,238,0.5); color: var(--ivory); }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 6000;
+      background: rgba(247,244,238,0.94);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.3s;
+    }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto;
+      padding: 0 var(--gut); height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo-img {
+      height: 36px; width: auto;
+      object-fit: contain; display: block;
+    }
+    .nav-logo-text {
+      display: flex; flex-direction: column; gap: 2px;
+    }
+    .nav-logo-name {
+      font-family: var(--serif); font-weight: 500;
+      font-size: 1.2rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--navy); line-height: 1;
+    }
+    .nav-logo-name span { color: var(--gold); }
+    .nav-logo-sub {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.52rem; letter-spacing: 0.28em;
+      text-transform: uppercase; color: var(--warm);
+    }
+    .nav-links { display: flex; gap: 40px; list-style: none; align-items: center; }
+    .nav-links a {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.72rem; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--warm);
+      position: relative; padding-bottom: 3px;
+      transition: color 0.25s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; width: 0; height: 1px;
+      background: var(--gold); transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.7rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--white);
+      background: var(--navy); padding: 12px 28px;
+      border: 1px solid var(--navy); transition: all 0.3s;
+    }
+    .nav-cta:hover { background: transparent; color: var(--navy); }
+
+    /* ── BUTTONS ── */
+    .btn-navy {
+      display: inline-block;
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.72rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--white);
+      background: var(--navy); padding: 15px 32px;
+      border: 1px solid var(--navy); transition: all 0.3s;
+    }
+    .btn-navy:hover { background: transparent; color: var(--navy); }
+    .btn-outline {
+      display: inline-block;
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.72rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--navy);
+      border: 1px solid var(--rule-dk); padding: 14px 32px;
+      transition: all 0.3s;
+    }
+    .btn-outline:hover { border-color: var(--navy); }
+    .btn-gold {
+      display: inline-block;
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.72rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--navy);
+      background: var(--gold); padding: 15px 32px;
+      border: 1px solid var(--gold); transition: all 0.3s;
+    }
+    .btn-gold:hover { background: var(--gold-lt); border-color: var(--gold-lt); }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.6rem; letter-spacing: 0.3em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 22px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .section-label::after {
+      content: ''; display: block;
+      width: 36px; height: 1px;
+      background: var(--gold); opacity: 0.5;
+    }
+
+    /* ── GOLD RULE ── */
+    .gold-rule {
+      width: 100%; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0.3;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      height: 100vh; min-height: 680px;
+      position: relative;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      overflow: hidden;
+    }
+    .hero-image { position: absolute; inset: 0; }
+    .hero-image img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 30%;
+      filter: grayscale(15%);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(12,22,40,0.18) 0%,
+        rgba(12,22,40,0.35) 40%,
+        rgba(12,22,40,0.84) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: var(--max); margin: 0 auto;
+      padding: 0 var(--gut) 80px; width: 100%;
+    }
+    .hero-eyebrow {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.65rem; letter-spacing: 0.32em;
+      text-transform: uppercase; color: var(--gold-lt);
+      margin-bottom: 26px;
+      opacity: 0; animation: fadeUp 0.9s ease 0.3s forwards;
+    }
+    .hero-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(3.5rem, 8vw, 9rem);
+      line-height: 0.93; letter-spacing: -0.01em;
+      color: var(--white); max-width: 900px;
+      margin-bottom: 40px;
+      opacity: 0; animation: fadeUp 1s ease 0.5s forwards;
+    }
+    .hero-headline em { font-style: italic; color: var(--gold-lt); }
+    .hero-bottom {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      opacity: 0; animation: fadeUp 0.9s ease 0.8s forwards;
+    }
+    .hero-descriptor {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.88rem; color: rgba(247,244,238,0.68);
+      line-height: 1.8; max-width: 460px;
+    }
+    .hero-stats { display: flex; gap: 52px; }
+    .hero-stat .num {
+      font-family: var(--serif); font-weight: 300;
+      font-size: 2.8rem; color: var(--white); line-height: 1; display: block;
+    }
+    .hero-stat .lbl {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.58rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold-lt);
+      display: block; margin-top: 6px;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── MANDATE ── */
+    .mandate {
+      padding: 140px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .mandate-inner {
+      display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0;
+      align-items: start;
+    }
+    .mandate-left { padding-right: 80px; }
+    .mandate-divider { background: var(--rule); align-self: stretch; }
+    .mandate-right { padding-left: 80px; }
+    .mandate-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.6rem, 4.5vw, 5rem);
+      line-height: 1.04; letter-spacing: -0.01em;
+      margin-bottom: 36px;
+    }
+    .mandate-headline em { font-style: italic; color: var(--gold); }
+    .mandate-image {
+      width: 100%; height: 400px;
+      overflow: hidden; position: relative; margin-top: 44px;
+    }
+    .mandate-image img {
+      width: 100%; height: 100%;
+      object-fit: cover; transition: transform 0.8s ease;
+    }
+    .mandate-image:hover img { transform: scale(1.04); }
+    .mandate-image-cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(12,22,40,0.75));
+      padding: 28px 22px 18px;
+    }
+    .mandate-image-cap span {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.6rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: rgba(247,244,238,0.45);
+    }
+    .mandate-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.95rem; color: var(--warm);
+      line-height: 1.85; margin-bottom: 20px;
+    }
+    .mandate-body strong { font-weight: 500; color: var(--navy); }
+    .mandate-pull {
+      font-family: var(--serif); font-style: italic;
+      font-weight: 300; font-size: 1.55rem;
+      line-height: 1.5; color: var(--navy);
+      border-left: 3px solid var(--gold);
+      padding-left: 26px; margin-top: 40px;
+    }
+
+    /* ── SERVICES / PILLARS ── */
+    .pillars { padding: 140px 0; background: var(--cream); border-bottom: 1px solid var(--rule); }
+    .pillars-header {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: end; margin-bottom: 72px;
+    }
+    .pillars-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.6rem, 4vw, 4.8rem); line-height: 1.0;
+    }
+    .pillars-intro {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; color: var(--warm); line-height: 1.8;
+    }
+
+    /* Services image strip */
+    .pillars-image-strip {
+      width: 100%; height: 300px;
+      overflow: hidden; position: relative; margin-bottom: 1px;
+    }
+    .pillars-image-strip img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 35%;
+    }
+    .pillars-strip-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(12,22,40,0.6), transparent 50%, rgba(12,22,40,0.2));
+    }
+    .pillars-strip-label {
+      position: absolute; bottom: 24px; left: 40px;
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.6rem; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--gold-lt);
+    }
+
+    .pillars-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid var(--rule);
+    }
+    .pillar {
+      padding: 52px 60px 52px 0;
+      border-bottom: 1px solid var(--rule);
+      border-right: 1px solid var(--rule);
+      position: relative; transition: background 0.3s;
+    }
+    .pillar:nth-child(even) { padding-left: 60px; padding-right: 0; border-right: none; }
+    .pillar:hover { background: var(--ivory); }
+    .pillar-image {
+      width: 100%; height: 200px;
+      overflow: hidden; margin-bottom: 32px;
+    }
+    .pillar-image img {
+      width: 100%; height: 100%;
+      object-fit: cover; filter: grayscale(20%);
+      transition: transform 0.6s ease, filter 0.4s ease;
+    }
+    .pillar:hover .pillar-image img { transform: scale(1.05); filter: grayscale(0%); }
+    .pillar-num {
+      font-family: var(--serif); font-weight: 300;
+      font-size: 4rem; color: var(--gold-pale);
+      line-height: 1; margin-bottom: 28px; display: block;
+    }
+    .pillar-title {
+      font-family: var(--serif); font-weight: 500;
+      font-size: 1.6rem; letter-spacing: 0.01em;
+      color: var(--navy); margin-bottom: 16px; line-height: 1.2;
+    }
+    .pillar-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.88rem; color: var(--warm);
+      line-height: 1.85; margin-bottom: 24px;
+    }
+    .pillar-deliverables { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+    .pillar-deliverables li {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.78rem; color: var(--warm);
+      padding-left: 16px; position: relative;
+    }
+    .pillar-deliverables li::before {
+      content: ''; position: absolute; left: 0; top: 50%;
+      transform: translateY(-50%); width: 5px; height: 1px; background: var(--gold);
+    }
+    .pillar-fee { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--rule); }
+    .pillar-fee-label {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.58rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--warm-lt); margin-bottom: 5px;
+    }
+    .pillar-fee-range {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 1.35rem; color: var(--gold);
+    }
+
+    /* ── PROOF / CASE STUDY ── */
+    .proof { padding: 140px 0; border-bottom: 1px solid var(--rule); }
+    .proof-inner {
+      display: grid; grid-template-columns: 5fr 4fr;
+      gap: 80px; align-items: center;
+    }
+    .proof-image { height: 560px; overflow: hidden; position: relative; }
+    .proof-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s ease; }
+    .proof-image:hover img { transform: scale(1.04); }
+    .proof-image-cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(12,22,40,0.82));
+      padding: 32px 26px 22px;
+    }
+    .proof-image-cap span {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.6rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: rgba(247,244,238,0.45);
+    }
+    .proof-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.2rem, 3.5vw, 4rem);
+      line-height: 1.05; margin-bottom: 28px;
+    }
+    .proof-headline em { font-style: italic; color: var(--gold); }
+    .proof-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; color: var(--warm);
+      line-height: 1.85; margin-bottom: 44px;
+    }
+    .proof-metrics {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--rule); margin-bottom: 36px;
+    }
+    .proof-metric {
+      padding: 26px 20px; border-right: 1px solid var(--rule); text-align: center;
+    }
+    .proof-metric:last-child { border-right: none; }
+    .proof-metric .val {
+      font-family: var(--serif); font-weight: 300;
+      font-size: 2.2rem; color: var(--navy); line-height: 1; display: block;
+    }
+    .proof-metric .desc {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.58rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--warm-lt);
+      display: block; margin-top: 7px;
+    }
+    .proof-attr {
+      font-family: var(--serif); font-style: italic;
+      font-weight: 300; font-size: 1.0rem;
+      color: var(--warm); line-height: 1.65;
+      border-left: 2px solid var(--gold); padding-left: 18px;
+    }
+    .proof-attr cite {
+      display: block; font-style: normal;
+      font-family: var(--sans); font-size: 0.62rem;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--warm-lt); margin-top: 10px;
+    }
+
+    /* ── DIFFERENTIATORS ── */
+    .diff { padding: 140px 0; background: var(--navy); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .diff-image-strip { width: 100%; height: 320px; overflow: hidden; position: relative; margin-bottom: 80px; }
+    .diff-image-strip img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; filter: grayscale(30%); }
+    .diff-image-strip-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(12,22,40,0.3), rgba(12,22,40,0.75));
+    }
+    .diff-strip-text {
+      position: absolute; bottom: 36px; left: 80px; right: 80px;
+      display: flex; justify-content: space-between; align-items: flex-end;
+    }
+    .diff-strip-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 4rem); color: var(--white); line-height: 1.0;
+    }
+    .diff-strip-headline em { font-style: italic; color: var(--gold-lt); }
+    .diff-strip-sub {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.82rem; color: rgba(247,244,238,0.45);
+      line-height: 1.75; max-width: 360px; text-align: right;
+    }
+    .diff-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .diff-item {
+      padding: 48px 44px 48px 0;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .diff-item:nth-child(3n) { border-right: none; padding-right: 0; }
+    .diff-line { width: 32px; height: 1px; background: var(--gold); margin-bottom: 26px; }
+    .diff-title {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 1.35rem; color: var(--ivory); margin-bottom: 14px; line-height: 1.2;
+    }
+    .diff-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.84rem; color: rgba(247,244,238,0.45); line-height: 1.8;
+    }
+
+    /* ── ECOSYSTEM ── */
+    .ecosystem { padding: 140px 0; border-bottom: 1px solid var(--rule); }
+    .eco-header { margin-bottom: 72px; }
+    .eco-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.6rem, 4vw, 4.8rem); line-height: 1.0; max-width: 600px;
+    }
+    .eco-headline em { font-style: italic; color: var(--gold); }
+    .eco-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--rule);
+    }
+    .eco-card {
+      background: var(--ivory); padding: 48px 44px;
+      transition: background 0.3s;
+    }
+    .eco-card:hover { background: var(--cream); }
+    .eco-card-image { width: 100%; height: 180px; overflow: hidden; margin-bottom: 28px; }
+    .eco-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: grayscale(15%); }
+    .eco-card:hover .eco-card-image img { transform: scale(1.05); filter: grayscale(0%); }
+    .eco-card-num {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.58rem; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+    }
+    .eco-card-name {
+      font-family: var(--serif); font-weight: 500;
+      font-size: 1.8rem; letter-spacing: 0.04em;
+      color: var(--navy); margin-bottom: 5px;
+    }
+    .eco-card-name span { color: var(--gold); }
+    .eco-card-role {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.62rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--warm-lt); margin-bottom: 20px;
+    }
+    .eco-card-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.86rem; color: var(--warm);
+      line-height: 1.8; margin-bottom: 28px;
+    }
+    .eco-link {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.66rem; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--navy);
+      display: flex; align-items: center; gap: 10px; transition: gap 0.2s;
+    }
+    .eco-link::after {
+      content: ''; display: block; width: 22px; height: 1px;
+      background: var(--navy); transition: width 0.3s;
+    }
+    .eco-card:hover .eco-link { gap: 14px; }
+    .eco-card:hover .eco-link::after { width: 36px; }
+
+    /* ── SECTORS ── */
+    .sectors { padding: 120px 0; background: var(--cream); border-bottom: 1px solid var(--rule); }
+    .sectors-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
+    .sectors-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.2rem, 3.5vw, 3.8rem); line-height: 1.05; margin-bottom: 22px;
+    }
+    .sectors-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.86rem; color: var(--warm); line-height: 1.8;
+    }
+    .sectors-list {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      list-style: none; border-top: 1px solid var(--rule);
+    }
+    .sectors-list li { padding: 22px 0; border-bottom: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+    .sectors-list li:nth-child(3n) { border-right: none; }
+    .sectors-list li a {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.76rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--navy);
+      padding-right: 20px; display: flex;
+      justify-content: space-between; align-items: center; transition: color 0.2s;
+    }
+    .sectors-list li a::after {
+      content: ''; display: inline-block;
+      width: 14px; height: 1px; background: currentColor; flex-shrink: 0;
+      transition: width 0.2s;
+    }
+    .sectors-list li a:hover { color: var(--gold); }
+    .sectors-list li a:hover::after { width: 22px; }
+
+    /* ── INSIGHTS ── */
+    .insights { padding: 140px 0; border-bottom: 1px solid var(--rule); }
+    .insights-header {
+      display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;
+    }
+    .insights-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.2rem, 3.5vw, 4rem); line-height: 1.0;
+    }
+    .insights-all {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.66rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: 10px; transition: gap 0.2s;
+    }
+    .insights-all::after { content: ''; display: block; width: 22px; height: 1px; background: var(--gold); }
+    .insights-all:hover { gap: 16px; }
+    .insights-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 1px; background: var(--rule);
+    }
+    .insight-card { background: var(--ivory); overflow: hidden; transition: background 0.3s; }
+    .insight-card:hover { background: var(--cream); }
+    .insight-img { width: 100%; height: 240px; overflow: hidden; }
+    .insight-img.tall { height: 320px; }
+    .insight-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+    .insight-card:hover .insight-img img { transform: scale(1.05); }
+    .insight-body { padding: 28px 32px 32px; }
+    .insight-tag {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.56rem; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+    }
+    .insight-title {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 1.3rem; line-height: 1.35; color: var(--navy); margin-bottom: 12px;
+    }
+    .insight-meta {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.66rem; letter-spacing: 0.1em; color: var(--warm-lt);
+    }
+
+    /* ── CONTACT / ENGAGE ── */
+    .engage {
+      padding: 160px 0; background: var(--navy);
+      position: relative; overflow: hidden;
+    }
+    .engage::before {
+      content: 'VOVO';
+      font-family: var(--serif); font-weight: 300;
+      font-size: 26vw; position: absolute;
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      color: rgba(255,255,255,0.012); pointer-events: none;
+      white-space: nowrap; letter-spacing: 0.08em;
+    }
+    .engage-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start; position: relative; z-index: 2;
+    }
+    .engage-headline {
+      font-family: var(--serif); font-weight: 300;
+      font-size: clamp(2.8rem, 5vw, 5.8rem);
+      color: var(--ivory); line-height: 0.95; margin-bottom: 28px;
+    }
+    .engage-headline em { font-style: italic; color: var(--gold-lt); }
+    .engage-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.9rem; color: rgba(247,244,238,0.45);
+      line-height: 1.8; margin-bottom: 48px; max-width: 460px;
+    }
+    .engage-contacts { display: flex; flex-direction: column; gap: 26px; }
+    .engage-clabel {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.56rem; letter-spacing: 0.28em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 5px;
+    }
+    .engage-cval {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 1.15rem; color: var(--ivory); transition: color 0.2s;
+    }
+    .engage-cval:hover { color: var(--gold-lt); }
+
+    /* FORM */
+    .engage-form {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 48px 44px;
+    }
+    .form-title {
+      font-family: var(--serif); font-weight: 400;
+      font-size: 1.5rem; color: var(--ivory); margin-bottom: 32px;
+    }
+    .form-row { margin-bottom: 18px; }
+    .form-row label {
+      display: block; font-family: var(--sans); font-weight: 300;
+      font-size: 0.58rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: rgba(247,244,238,0.38); margin-bottom: 7px;
+    }
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+      width: 100%; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--ivory); font-family: var(--sans);
+      font-weight: 300; font-size: 0.86rem;
+      padding: 13px 15px; outline: none;
+      transition: border-color 0.2s; border-radius: 0; appearance: none;
+    }
+    .form-row input::placeholder, .form-row textarea::placeholder { color: rgba(247,244,238,0.2); }
+    .form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: var(--gold); }
+    .form-row textarea { resize: none; height: 96px; }
+    .form-row select { cursor: pointer; color: var(--ivory); }
+    .form-row select option { background: var(--navy); }
+    .form-submit {
+      width: 100%; background: var(--gold); border: 1px solid var(--gold);
+      color: var(--navy); font-family: var(--sans);
+      font-weight: 500; font-size: 0.72rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 17px; cursor: pointer; transition: all 0.3s; margin-top: 6px;
+    }
+    .form-submit:hover { background: transparent; color: var(--gold); }
+    .form-success {
+      display: none; padding: 40px 20px; text-align: center;
+    }
+    .form-success p {
+      font-family: var(--serif); font-style: italic;
+      font-size: 1.3rem; color: var(--ivory); line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 64px 0 40px;
+    }
+    .footer-inner {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      gap: 44px; margin-bottom: 56px;
+      padding-bottom: 52px; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .footer-logo-img { height: 34px; width: auto; object-fit: contain; display: block; margin-bottom: 10px; }
+    .footer-logo-fallback {
+      font-family: var(--serif); font-weight: 500;
+      font-size: 1.5rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--ivory); margin-bottom: 6px;
+    }
+    .footer-logo-fallback span { color: var(--gold); }
+    .footer-tagline {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.56rem; letter-spacing: 0.28em;
+      text-transform: uppercase; color: rgba(247,244,238,0.28); margin-bottom: 18px;
+    }
+    .footer-brand-body {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.78rem; color: rgba(247,244,238,0.3); line-height: 1.75; max-width: 280px;
+    }
+    .footer-col h6 {
+      font-family: var(--sans); font-weight: 400;
+      font-size: 0.58rem; letter-spacing: 0.26em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 22px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .footer-col ul li a {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.8rem; color: rgba(247,244,238,0.38); transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--ivory); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-copy {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(247,244,238,0.2);
+    }
+    .footer-eco {
+      font-family: var(--sans); font-weight: 300;
+      font-size: 0.62rem; letter-spacing: 0.14em;
+      text-transform: uppercase; color: rgba(247,244,238,0.2);
+    }
+    .footer-eco a { color: var(--gold); transition: opacity 0.2s; }
+    .footer-eco a:hover { opacity: 0.75; }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0; transform: translateY(26px);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94),
+                  transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .rv1 { transition-delay: 0.1s; }
+    .rv2 { transition-delay: 0.2s; }
+    .rv3 { transition-delay: 0.3s; }
+    .rv4 { transition-delay: 0.4s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1100px) {
+      :root { --gut: 40px; }
+      .nav-links { display: none; }
+      .mandate-inner { grid-template-columns: 1fr; gap: 52px; }
+      .mandate-left { padding-right: 0; }
+      .mandate-right { padding-left: 0; }
+      .mandate-divider { display: none; }
+      .pillars-header { grid-template-columns: 1fr; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .pillar, .pillar:nth-child(even) { padding: 44px 0; border-right: none; }
+      .proof-inner { grid-template-columns: 1fr; }
+      .proof-image { height: 400px; }
+      .diff-grid { grid-template-columns: 1fr 1fr; }
+      .diff-item:nth-child(3n) { border-right: 1px solid rgba(255,255,255,0.06); padding-right: 44px; }
+      .diff-item:nth-child(2n) { border-right: none; padding-right: 0; }
+      .diff-strip-text { left: 40px; right: 40px; }
+      .eco-grid { grid-template-columns: 1fr; }
+      .sectors-inner { grid-template-columns: 1fr; gap: 36px; }
+      .sectors-list { grid-template-columns: repeat(2, 1fr); }
+      .insights-grid { grid-template-columns: 1fr 1fr; }
+      .insights-grid .insight-card:first-child { grid-column: 1 / -1; }
+      .insight-img.tall { height: 240px; }
+      .engage-inner { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .cookie-banner { padding: 16px 40px; flex-direction: column; align-items: flex-start; gap: 16px; }
+      .wa-float { bottom: 24px; right: 24px; }
+    }
+    @media (max-width: 640px) {
+      :root { --gut: 24px; }
+      .hero-bottom { flex-direction: column; gap: 28px; }
+      .hero-stats { gap: 32px; }
+      .proof-metrics { grid-template-columns: 1fr; }
+      .proof-metric { border-right: none; border-bottom: 1px solid var(--rule); }
+      .proof-metric:last-child { border-bottom: none; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .diff-item { border-right: none !important; padding-right: 0 !important; }
+      .sectors-list { grid-template-columns: 1fr; }
+      .sectors-list li { border-right: none; }
+      .insights-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .diff-strip-text { flex-direction: column; gap: 16px; left: 24px; right: 24px; }
+      .diff-strip-sub { text-align: left; max-width: 100%; }
+      .engage-form { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="wa-float" href="https://wa.me/27788949331?text=Hi%20Vovo%20Capital%2C%20I%20would%20like%20to%20enquire%20about%20your%20advisory%20services." target="_blank" rel="noopener" aria-label="Chat with Vovo Capital on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+    <p class="cookie-text">
+      We use cookies to improve your experience and analyse site traffic. By clicking Accept you consent to our use of cookies.
+      Read our <a href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a> to learn more.
+    </p>
+    <div class="cookie-actions">
+      <button class="ck-btn ck-accept" onclick="setCookieChoice('accepted')">Accept</button>
+      <button class="ck-btn ck-reject" onclick="setCookieChoice('rejected')">Reject</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Vovo Capital home">
+        <img src="images/logo.png" alt="Vovo Capital logo" class="nav-logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <span class="nav-logo-text" style="display:none;">
+          <span class="nav-logo-name">VOVO <span>CAPITAL</span></span>
+          <span class="nav-logo-sub">Business Growth Advisory</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#mandate">Firm</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#proof">Results</a></li>
+        <li><a href="#ecosystem">Ecosystem</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Engage the Firm</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-image">
+      <img src="images/hero-banner.jpg" alt="Vovo Capital — business growth and AI transformation advisory, Sandton Johannesburg" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Johannesburg, South Africa &nbsp;·&nbsp; Business Growth &amp; AI Transformation</p>
+      <h1 class="hero-headline">
+        The Capital<br>
+        Your Business<br>
+        <em>Deploys to Grow.</em>
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-descriptor">
+          We are not a traditional consultancy. Vovo Capital is the strategic intelligence layer that mid-market and enterprise companies deploy to build revenue, transform operations, and gain irreversible competitive advantage.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="num">R10M+</span>
+            <span class="lbl">Revenue Generated</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">40+</span>
+            <span class="lbl">Mandates Closed</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">6x</span>
+            <span class="lbl">Avg. Client ROI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANDATE -->
+  <section class="mandate" id="mandate">
+    <div class="container">
+      <div class="mandate-inner">
+        <div class="mandate-left reveal">
+          <p class="section-label">Our Mandate</p>
+          <h2 class="mandate-headline">
+            Strategy that<br>pays for itself.<br><em>Immediately.</em>
+          </h2>
+          <div class="mandate-image">
+            <img src="images/mandate-boardroom.jpg" alt="Vovo Capital executive advisory session, Sandton boardroom" />
+            <div class="mandate-image-cap">
+              <span>Senior leadership advisory — Johannesburg headquarters</span>
+            </div>
+          </div>
+        </div>
+        <div class="mandate-divider"></div>
+        <div class="mandate-right reveal rv2">
+          <p class="mandate-body">
+            Most consultancies hand you a report. <strong>We hand you results.</strong> Vovo Capital combines boardroom-level strategic rigour with the execution power of South Africa's most advanced digital infrastructure platform — ensuring every recommendation is backed by the systems, AI, and marketing engines that make it real.
+          </p>
+          <p class="mandate-body">
+            We work with <strong>mid-market companies turning R50M to R500M</strong> and enterprise groups that understand one truth: the right strategic partner does not cost money. They generate it. Our mandates are designed to produce measurable revenue impact within the first 90 days of engagement.
+          </p>
+          <p class="mandate-body">
+            This is not advice for advice's sake. This is <strong>capital in its purest form</strong> — the strategic asset deployed to compound returns.
+          </p>
+          <blockquote class="mandate-pull">
+            "The most expensive decision a company can make is the wrong strategy, executed well."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <!-- SERVICES / PILLARS -->
+  <section class="pillars" id="services">
+    <div class="container">
+      <div class="pillars-header reveal">
+        <div>
+          <p class="section-label">Core Services</p>
+          <h2 class="pillars-headline">Four Pillars.<br>One Outcome.</h2>
+        </div>
+        <p class="pillars-intro">
+          Each service pillar is designed as a standalone engagement or as part of an integrated transformation mandate. All four are underpinned by live AI infrastructure — not static frameworks.
+        </p>
+      </div>
+
+      <!-- Wide image strip -->
+      <div class="pillars-image-strip reveal">
+        <img src="images/services-banner.jpg" alt="Vovo Capital strategic advisory and AI transformation services for South African enterprises" />
+        <div class="pillars-strip-overlay"></div>
+        <span class="pillars-strip-label">// Strategic Mandates — Active Engagements</span>
+      </div>
+
+      <div class="pillars-grid">
+
+        <article class="pillar reveal">
+          <div class="pillar-image">
+            <img src="images/service-revenue.jpg" alt="Revenue growth consulting and sales strategy for South African mid-market companies" />
+          </div>
+          <span class="pillar-num">01</span>
+          <h3 class="pillar-title">Revenue Growth Consulting</h3>
+          <p class="pillar-body">We build systematic, repeatable revenue engines for businesses that have hit a plateau. Market expansion, pricing architecture, sales process design, and go-to-market strategy — delivered as a working system, not a document.</p>
+          <ul class="pillar-deliverables">
+            <li>Revenue model redesign and pricing strategy</li>
+            <li>Sales process architecture and automation</li>
+            <li>Market penetration and expansion roadmap</li>
+            <li>Pipeline and forecast modelling</li>
+            <li>Performance dashboards and KPI frameworks</li>
+          </ul>
+          <div class="pillar-fee">
+            <p class="pillar-fee-label">Engagement Fee</p>
+            <p class="pillar-fee-range">R50,000 — R150,000 / month</p>
+          </div>
+        </article>
+
+        <article class="pillar reveal rv2">
+          <div class="pillar-image">
+            <img src="images/service-ai.jpg" alt="AI business transformation and enterprise AI deployment South Africa" />
+          </div>
+          <span class="pillar-num">02</span>
+          <h3 class="pillar-title">AI Business Transformation</h3>
+          <p class="pillar-body">We deploy AI across your operations — customer service, lead qualification, content, reporting, and internal workflows. Not as a pilot. As a permanent, revenue-generating infrastructure that compounds over time.</p>
+          <ul class="pillar-deliverables">
+            <li>Enterprise AI strategy and roadmap</li>
+            <li>AI customer service and sales systems</li>
+            <li>Operational automation deployment</li>
+            <li>Data and analytics infrastructure</li>
+            <li>Change management and staff enablement</li>
+          </ul>
+          <div class="pillar-fee">
+            <p class="pillar-fee-label">Project Range</p>
+            <p class="pillar-fee-range">R150,000 — R800,000 per mandate</p>
+          </div>
+        </article>
+
+        <article class="pillar reveal">
+          <div class="pillar-image">
+            <img src="images/service-bbbee.jpg" alt="B-BBEE strategy consulting and compliance advisory South Africa" />
+          </div>
+          <span class="pillar-num">03</span>
+          <h3 class="pillar-title">B-BBEE Strategy &amp; Advisory</h3>
+          <p class="pillar-body">In South Africa, B-BBEE is not administrative overhead — it is a strategic lever. We design B-BBEE frameworks that protect tender eligibility, improve scorecard positioning, and create genuine enterprise and supplier development value.</p>
+          <ul class="pillar-deliverables">
+            <li>Scorecard audit and gap analysis</li>
+            <li>Ownership, management and skills planning</li>
+            <li>Supplier development programme design</li>
+            <li>Tender eligibility and compliance structuring</li>
+            <li>Annual review and recalibration</li>
+          </ul>
+          <div class="pillar-fee">
+            <p class="pillar-fee-label">Engagement Fee</p>
+            <p class="pillar-fee-range">R30,000 — R100,000 per engagement</p>
+          </div>
+        </article>
+
+        <article class="pillar reveal rv2">
+          <div class="pillar-image">
+            <img src="images/service-digital.jpg" alt="Digital transformation mandate for enterprise South Africa Johannesburg" />
+          </div>
+          <span class="pillar-num">04</span>
+          <h3 class="pillar-title">Digital Transformation Mandates</h3>
+          <p class="pillar-body">Full-scope transformation for enterprises moving from legacy operations to digital-first business models. Strategy, technology deployment, and change management — end to end, from the boardroom to the last mile of execution.</p>
+          <ul class="pillar-deliverables">
+            <li>Digital maturity assessment and benchmarking</li>
+            <li>Technology stack architecture and selection</li>
+            <li>End-to-end implementation management</li>
+            <li>Workforce capability building</li>
+            <li>Post-launch performance optimisation</li>
+          </ul>
+          <div class="pillar-fee">
+            <p class="pillar-fee-label">Project Range</p>
+            <p class="pillar-fee-range">R300,000 — R2,000,000 per mandate</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" id="proof">
+    <div class="container">
+      <div class="proof-inner">
+        <div class="proof-image reveal">
+          <img src="images/case-study.jpg" alt="Vovo Capital client result — logistics company digital transformation Gauteng" />
+          <div class="proof-image-cap">
+            <span>Client case study — Logistics sector, Gauteng</span>
+          </div>
+        </div>
+        <div class="reveal rv2">
+          <p class="section-label">Verified Result</p>
+          <h2 class="proof-headline">
+            From invisible<br>to <em>R5.58 million</em><br>in six months.
+          </h2>
+          <p class="proof-body">
+            A Gauteng-based logistics company engaged Vovo Capital with zero digital presence, an undefined revenue strategy, and a pipeline that relied entirely on referrals. Within six months of our integrated mandate — combining revenue strategy, digital transformation, and AI-powered lead generation — the business closed 31 new enterprise clients and generated R5.58 million in net new revenue.
+          </p>
+          <div class="proof-metrics">
+            <div class="proof-metric">
+              <span class="val">R5.58M</span>
+              <span class="desc">Net New Revenue</span>
+            </div>
+            <div class="proof-metric">
+              <span class="val">31</span>
+              <span class="desc">Enterprise Clients</span>
+            </div>
+            <div class="proof-metric">
+              <span class="val">6,465%</span>
+              <span class="desc">Return on Investment</span>
+            </div>
+          </div>
+          <blockquote class="proof-attr">
+            "Before this engagement we were invisible. Within the first month the mandate had already paid for itself — and we were only three weeks in."
+            <cite>Managing Director — Tripli Projects</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATORS -->
+  <section class="diff">
+    <div class="container">
+      <div class="diff-image-strip reveal">
+        <img src="images/diff-banner.jpg" alt="Why leading South African companies choose Vovo Capital for strategic advisory" />
+        <div class="diff-image-strip-overlay"></div>
+        <div class="diff-strip-text">
+          <h2 class="diff-strip-headline">
+            Why the best<br>companies choose<br><em>Vovo Capital.</em>
+          </h2>
+          <p class="diff-strip-sub">
+            We are not a traditional advisory firm. Our competitive advantage lies in what happens after the strategy session — execution.
+          </p>
+        </div>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-item reveal">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">Strategy Backed by Execution</h4>
+          <p class="diff-body">Every recommendation we make is deployable. We own the infrastructure to build, launch, and operate the digital systems our strategies require — through our network of specialists.</p>
+        </div>
+        <div class="diff-item reveal rv1">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">AI-Native Advisory</h4>
+          <p class="diff-body">While traditional consultants recommend AI, we deploy it. Our advisors are trained on live AI systems and work exclusively with tools that are already generating revenue for clients.</p>
+        </div>
+        <div class="diff-item reveal rv2">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">South African Market Intelligence</h4>
+          <p class="diff-body">We operate exclusively in South Africa. We understand the B-BBEE landscape, the JSE-listed corporate culture, and the specific pressures facing mid-market growth companies here.</p>
+        </div>
+        <div class="diff-item reveal">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">Results-Linked Engagements</h4>
+          <p class="diff-body">We structure our mandates around outcomes, not hours. Where appropriate, we align our fees to your growth — because we are confident enough in our work to share the risk.</p>
+        </div>
+        <div class="diff-item reveal rv1">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">Boutique Access, Enterprise Capability</h4>
+          <p class="diff-body">You work directly with senior advisors — not graduates in a team room. Our network gives you enterprise-grade capability delivered with the attention of a boutique partner.</p>
+        </div>
+        <div class="diff-item reveal rv2">
+          <div class="diff-line"></div>
+          <h4 class="diff-title">Integrated Security Intelligence</h4>
+          <p class="diff-body">Through Steleg Security, our clients have access to enterprise cyber defence, M&amp;A due diligence, and dark web monitoring — capabilities most advisory firms cannot offer at any price.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM -->
+  <section class="ecosystem" id="ecosystem">
+    <div class="container">
+      <div class="eco-header reveal">
+        <p class="section-label">The Group</p>
+        <h2 class="eco-headline">Three firms.<br>One <em>unfair advantage.</em></h2>
+      </div>
+      <div class="eco-grid">
+        <div class="eco-card reveal">
+          <div class="eco-card-image">
+            <img src="images/eco-vovo.jpg" alt="Vovo Capital business growth and AI transformation advisory Johannesburg" />
+          </div>
+          <p class="eco-card-num">01 — Strategy &amp; Advisory</p>
+          <h3 class="eco-card-name">VOVO <span>CAPITAL</span></h3>
+          <p class="eco-card-role">Business Growth &amp; AI Transformation</p>
+          <p class="eco-card-body">The strategic intelligence layer. Revenue consulting, AI transformation, B-BBEE advisory, and digital transformation mandates for mid-market and enterprise clients across South Africa.</p>
+          <span class="eco-link">This firm</span>
+        </div>
+        <div class="eco-card reveal rv1">
+          <div class="eco-card-image">
+            <img src="images/eco-steleg.jpg" alt="Steleg AI-powered performance marketing and digital engineering South Africa" />
+          </div>
+          <p class="eco-card-num">02 — Digital Execution</p>
+          <h3 class="eco-card-name">STELEG<span>.</span></h3>
+          <p class="eco-card-role">AI-Powered Performance Marketing</p>
+          <p class="eco-card-body">South Africa's leading AI-powered digital performance company. Conversion-optimised web platforms, AI customer service, performance marketing, and content generation — built to generate revenue.</p>
+          <a href="https://steleg.co.za" target="_blank" rel="noopener" class="eco-link">Visit Steleg</a>
+        </div>
+        <div class="eco-card reveal rv2">
+          <div class="eco-card-image">
+            <img src="images/eco-security.jpg" alt="Steleg Security corporate cyber defence dark web intelligence Johannesburg" />
+          </div>
+          <p class="eco-card-num">03 — Cyber Defence</p>
+          <h3 class="eco-card-name">STELEG <span>SEC</span></h3>
+          <p class="eco-card-role">Corporate Cyber Security Division</p>
+          <p class="eco-card-body">Elite digital forensics, dark web intelligence, M&amp;A cyber due diligence, and vulnerability remediation. Protecting the digital assets the group builds and the mandates Vovo Capital executes.</p>
+          <a href="https://security.steleg.co.za" target="_blank" rel="noopener" class="eco-link">Visit Steleg Security</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section class="sectors">
+    <div class="container">
+      <div class="sectors-inner">
+        <div class="reveal">
+          <p class="section-label">Sectors</p>
+          <h2 class="sectors-headline">Industries we serve.</h2>
+          <p class="sectors-body">
+            Our advisors hold deep familiarity across South Africa's most active and capital-intensive sectors. We do not deploy generic frameworks — we apply sector-specific intelligence to every engagement.
+          </p>
+        </div>
+        <div class="reveal rv2">
+          <ul class="sectors-list">
+            <li><a href="#contact">Financial Services</a></li>
+            <li><a href="#contact">Logistics &amp; Supply Chain</a></li>
+            <li><a href="#contact">Property &amp; Construction</a></li>
+            <li><a href="#contact">Healthcare &amp; Pharmaceuticals</a></li>
+            <li><a href="#contact">Retail &amp; Consumer</a></li>
+            <li><a href="#contact">Manufacturing</a></li>
+            <li><a href="#contact">Mining &amp; Resources</a></li>
+            <li><a href="#contact">Professional Services</a></li>
+            <li><a href="#contact">Government &amp; Public Sector</a></li>
+            <li><a href="#contact">Technology &amp; Software</a></li>
+            <li><a href="#contact">Education &amp; Training</a></li>
+            <li><a href="#contact">Energy &amp; Infrastructure</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="insights" id="insights">
+    <div class="container">
+      <div class="insights-header reveal">
+        <div>
+          <p class="section-label">Thought Leadership</p>
+          <h2 class="insights-headline">Vovo Capital<br>Intelligence.</h2>
+        </div>
+        <a href="mailto:info@vovocapital.com?subject=Intelligence Hub Access" class="insights-all">All publications</a>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card reveal">
+          <div class="insight-img tall">
+            <img src="images/insight-1.jpg" alt="Why South African enterprises must deploy AI in 2025 — Vovo Capital insight" />
+          </div>
+          <div class="insight-body">
+            <p class="insight-tag">AI Transformation</p>
+            <h4 class="insight-title">Why South African Enterprises Must Deploy AI in 2025 — Before Their Competitors Do It For Them</h4>
+            <p class="insight-meta">February 2025 &nbsp;·&nbsp; 8 min read</p>
+          </div>
+        </div>
+        <div class="insight-card reveal rv1">
+          <div class="insight-img">
+            <img src="images/insight-2.jpg" alt="The B-BBEE lever most boards are still ignoring — Vovo Capital" />
+          </div>
+          <div class="insight-body">
+            <p class="insight-tag">B-BBEE Strategy</p>
+            <h4 class="insight-title">The B-BBEE Lever Most Boards Are Still Ignoring</h4>
+            <p class="insight-meta">January 2025 &nbsp;·&nbsp; 6 min read</p>
+          </div>
+        </div>
+        <div class="insight-card reveal rv2">
+          <div class="insight-img">
+            <img src="images/insight-3.jpg" alt="Revenue architecture of South Africa's fastest-growing mid-market companies — Vovo Capital" />
+          </div>
+          <div class="insight-body">
+            <p class="insight-tag">Revenue Strategy</p>
+            <h4 class="insight-title">Plateau to Scale: The Revenue Architecture of South Africa's Fastest-Growing Mid-Market Companies</h4>
+            <p class="insight-meta">December 2024 &nbsp;·&nbsp; 10 min read</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="engage" id="contact">
+    <div class="container">
+      <div class="engage-inner">
+        <div class="reveal">
+          <p class="section-label" style="color:var(--gold);">Begin an Engagement</p>
+          <h2 class="engage-headline">
+            Let us deploy<br><em>capital</em><br>into yours.
+          </h2>
+          <p class="engage-body">
+            Initial consultations are confidential, without obligation, and conducted at senior advisory level. We respond to all enquiries within one business day.
+          </p>
+          <div class="engage-contacts">
+            <div>
+              <p class="engage-clabel">General Enquiries</p>
+              <a href="mailto:info@vovocapital.com" class="engage-cval">info@vovocapital.com</a>
+            </div>
+            <div>
+              <p class="engage-clabel">WhatsApp</p>
+              <a href="https://wa.me/27788949331?text=Hi%20Vovo%20Capital%2C%20I%20would%20like%20to%20enquire%20about%20your%20advisory%20services." class="engage-cval" target="_blank" rel="noopener">078 894 9331</a>
+            </div>
+            <div>
+              <p class="engage-clabel">Location</p>
+              <span class="engage-cval" style="cursor:default;">Sandton, Johannesburg</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal rv2">
+          <div class="engage-form">
+            <h3 class="form-title">Request a Consultation</h3>
+            <div id="vcFormFields">
+              <div class="form-row">
+                <label for="vc_name">Full Name</label>
+                <input type="text" id="vc_name" placeholder="Your full name" autocomplete="name" />
+              </div>
+              <div class="form-row">
+                <label for="vc_company">Company</label>
+                <input type="text" id="vc_company" placeholder="Company name" autocomplete="organization" />
+              </div>
+              <div class="form-row">
+                <label for="vc_email">Email Address</label>
+                <input type="email" id="vc_email" placeholder="your@company.com" autocomplete="email" />
+              </div>
+              <div class="form-row">
+                <label for="vc_phone">Phone / WhatsApp</label>
+                <input type="tel" id="vc_phone" placeholder="+27 __ ___ ____" autocomplete="tel" />
+              </div>
+              <div class="form-row">
+                <label for="vc_service">Service of Interest</label>
+                <select id="vc_service">
+                  <option value="" disabled selected>Select a service pillar</option>
+                  <option>Revenue Growth Consulting</option>
+                  <option>AI Business Transformation</option>
+                  <option>B-BBEE Strategy &amp; Advisory</option>
+                  <option>Digital Transformation Mandate</option>
+                  <option>Multiple / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="vc_message">Brief Context</label>
+                <textarea id="vc_message" placeholder="Describe your challenge or objective in a few sentences."></textarea>
+              </div>
+              <button class="form-submit" onclick="submitVovoForm()">Submit Enquiry</button>
+            </div>
+            <div class="form-success" id="vcFormSuccess">
+              <p>Thank you. We will be in touch<br>within one business day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <img src="images/logo.png" alt="Vovo Capital" class="footer-logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <div class="footer-logo-fallback" style="display:none;">VOVO <span>CAPITAL</span></div>
+          <p class="footer-tagline">Business Growth Advisory &nbsp;·&nbsp; Johannesburg, ZA</p>
+          <p class="footer-brand-body">South Africa's premier business growth and AI transformation advisory. We deploy strategy, intelligence, and AI infrastructure to generate measurable returns for mid-market and enterprise clients.</p>
+        </div>
+        <div class="footer-col">
+          <h6>Services</h6>
+          <ul>
+            <li><a href="#services">Revenue Growth Consulting</a></li>
+            <li><a href="#services">AI Transformation</a></li>
+            <li><a href="#services">B-BBEE Advisory</a></li>
+            <li><a href="#services">Digital Transformation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Firm</h6>
+          <ul>
+            <li><a href="#mandate">About Vovo Capital</a></li>
+            <li><a href="#proof">Case Studies</a></li>
+            <li><a href="#insights">Intelligence Hub</a></li>
+            <li><a href="#contact">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Contact</h6>
+          <ul>
+            <li><a href="mailto:info@vovocapital.com">info@vovocapital.com</a></li>
+            <li><a href="https://wa.me/27788949331" target="_blank" rel="noopener">078 894 9331</a></li>
+            <li><a href="#contact">Sandton, Johannesburg</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Legal &amp; Group</h6>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="terms.html">Terms of Engagement</a></li>
+            <li><a href="https://steleg.co.za" target="_blank" rel="noopener">Steleg</a></li>
+            <li><a href="https://security.steleg.co.za" target="_blank" rel="noopener">Steleg Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Vovo Capital Group. All Rights Reserved. Registered in South Africa.</span>
+        <span class="footer-eco">
+          Part of the <a href="https://steleg.co.za" target="_blank" rel="noopener">Steleg</a> ecosystem &nbsp;·&nbsp;
+          <a href="https://security.steleg.co.za" target="_blank" rel="noopener">Steleg Security</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Scroll reveal ── */
+    const revObs = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -36px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+    /* ── Nav border on scroll ── */
+    const mainNav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      mainNav.style.borderBottomColor = window.scrollY > 60 ? 'var(--rule-dk)' : 'var(--rule)';
+    });
+
+    /* ── Smooth anchor scroll (offset for fixed nav) ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        const t = document.querySelector(this.getAttribute('href'));
+        if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 80, behavior: 'smooth' }); }
+      });
+    });
+
+    /* ── Cookie banner ── */
+    (function() {
+      if (localStorage.getItem('vc_cookie_pref')) {
+        document.getElementById('cookieBanner').classList.add('hidden');
+      }
+    })();
+    function setCookieChoice(choice) {
+      localStorage.setItem('vc_cookie_pref', choice);
+      document.getElementById('cookieBanner').classList.add('hidden');
+    }
+
+    /* ── Contact form → mailto:info@vovocapital.com ── */
+    function submitVovoForm() {
+      var name    = document.getElementById('vc_name').value.trim();
+      var company = document.getElementById('vc_company').value.trim();
+      var email   = document.getElementById('vc_email').value.trim();
+      var phone   = document.getElementById('vc_phone').value.trim();
+      var service = document.getElementById('vc_service').value;
+      var message = document.getElementById('vc_message').value.trim();
+      if (!name || !email) { alert('Please enter your name and email address.'); return; }
+      var subject = encodeURIComponent('Advisory Enquiry — ' + (company || name));
+      var body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Company: ' + (company || 'Not provided') + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + (phone || 'Not provided') + '\n' +
+        'Service: ' + (service || 'Not specified') + '\n\n' +
+        'Context:\n' + (message || 'No context provided.')
+      );
+      window.location.href = 'mailto:info@vovocapital.com?subject=' + subject + '&body=' + body;
+      document.getElementById('vcFormFields').style.display = 'none';
+      document.getElementById('vcFormSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
